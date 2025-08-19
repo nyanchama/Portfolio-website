@@ -1,7 +1,8 @@
+
 body {
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #0a192f;  /* Deep navy */
-  color: #e6f1ff;             /* Light text */
+  color: #dbe6f4;             /* Light text */
   line-height: 1.6;
 }
 
@@ -14,17 +15,37 @@ h1, h2, h3 {
 
 p {
   font-weight: 400;           /* Regular for body */
-    color: #e6f1ff;             /* Light text */
+    color: #dbe6f4;             /* Light text */
             /* Soft slate gray */
   margin-bottom: 1em;
 }
 
 a {
-  color: #fa7268;             /* Coral accent for links */
+  color: #54D2D5;             /* Coral accent for links */
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffcc66;             /* Muted amber on hover */
+  color: #7DF5F8;             /* Muted amber on hover */
+}
+
+.socials a {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--accent-hover);
+}
+
+aside.sidebar {
+  width: 250px;               /* Fixed width for sidebar */
+  background-color: #0a192f; /* Darker navy for sidebar */
+  padding: 20px;
+  position: fixed;            /* Fixed position */
+  top: 0;
+  left: 0;
+  height: 100%;
 }
